@@ -1,62 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <link rel="stylesheet" href="style/main.css">
-   <link rel="stylesheet" href="style/home.css">
-
     <title>Dramaflix</title>
+
+    <script src="https://kit.fontawesome.com/2ed0eec5d8.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo__header">
-            <a href="#"><img src="img/logo.png" alt="logo Dramaflix"></a>
+    <div class="container-fluid">
+        <header class="header">
+            <div class="logo__header">
+                <a href="#"><img src="img/logo.png" loading="lazy" alt="logo Dramaflix"></a>
+            </div>
+
+            <div class="navigation">
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Kdramas</a></li>
+                    <li><a href="#">Jdramas</a></li>
+                    <li><a href="#">Cdramas</a></li>
+                </ul>
+            </div>
+
+            <div class="noti">
+                <div class="search__box">
+                    <input class="search__txt" type="text" placeholder="Títulos, gente e gêneros"><i class="fas fa-search"></i></input>
+                </div>
+                
+                <i class="fas fa-bell"></i>
+            </div>
+        </header>
+    </div>
+
+    <div id="hero" class="container-fluid">
+        <div class="container">
+            <div class="hero__infos">
+                <div class="main__movie">
+                    <img class="main__movie--logo" src="img/logo-vincenzo.png" alt="logo Vincenzo">
+                    <p class="main__movie--desc">Ao visitar sua terra natal, um advogado coreano que trabalha para a máfia italiana se envolve numa batalha contra um poderoso conglomerado. E faz justiça a seu modo.</p>
+
+                    <div class="main__buttons">
+                        <button class="main__btn btn__watch"><i class="fas fa-play"></i>Assitir</button>
+                        <button class="main__btn btn__info"><i class="fas fa-info-circle"></i>Mais informações</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__carousel">
+                <div class="main__carousel--info">
+                    <h2 class="main__carousel--title">Minha lista</h2>
+                </div>
+                <div class="carousel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-1.jpg" alt="mini 1">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-2.jpg" alt="mini 2">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-3.jpg" alt="mini 3">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-4.jpg" alt="mini 4">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-5.jpg" alt="mini 5">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-6.jpg" alt="mini 6">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-7.jpg" alt="mini 7">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-8.jpg" alt="mini 8">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-9.jpg" alt="mini 9">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-10.jpg" alt="mini 10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__carousel">
+                <div class="main__carousel--info">
+                    <h2 class="main__carousel--title popular">Populares na Dramaflix</h2>
+                </div>
+                <div class="carousel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-11.jpg" alt="mini 11">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-12.jpg" alt="mini 12">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-13.jpg" alt="mini 13">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-14.jpg" alt="mini 14">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-15.jpg" alt="mini 15">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-16.jpg" alt="mini 16">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-17.jpg" alt="mini 17">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-18.jpg" alt="mini 18">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-19.jpg" alt="mini 19">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-20.jpg" alt="mini 20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__carousel">
+                <div class="main__carousel--info">
+                    <h2 class="main__carousel--title popular">Assistir novamente</h2>
+                </div>
+                <div class="carousel">
+                    <div class="owl-carousel owl-theme">
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-7.jpg" alt="mini 7">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-19.jpg" alt="mini 19">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-8.jpg" alt="mini 8">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-20.jpg" alt="mini 20">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-1.jpg" alt="mini 1">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-17.jpg" alt="mini 17">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-3.jpg" alt="mini 3">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-18.jpg" alt="mini 18">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-19.jpg" alt="mini 19">
+                        </div>
+                        <div class="movie">
+                            <img class="box-movie" src="img/mini-20.jpg" alt="mini 20">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <main class="list-profiles">
-        <h1 class="profile-gate-label">Quem está assistindo?</h1>
-
-        <ul class="choose-profile">
-            <li class="profile">
-                <div>
-                    <a href="https://saracavalcante.github.io/dramaflix/index.html"><img src="img/avatar-1.png" alt="avatar 1"></a>
-                    <h2 class="profile-name">Sara</h2>
-                </div>
-            </li>
-            <li class="profile">
-                <div>
-                    <a href="index.html"><img src="img/avatar-2.png" alt="avatar 2"></a>
-                    <h2 class="profile-name">Visitante 1</h2>
-                </div>
-            </li>
-            <li class="profile">
-                <div>
-                    <a href="index.html"><img src="img/avatar-3.png" alt="avatar 3"></a>
-                    <h2 class="profile-name">Visitante 2</h2>
-                </div>
-            </li>
-            <li class="profile">
-                <div>
-                    <a href="index.html"><img src="img/avatar-4.png" alt="avatar 4"></a>
-                    <h2 class="profile-name">Visitante 3</h2>
-                </div>
-            </li>
-            <li class="profile">
-                <div>
-                    <a href="index.html"><img src="img/avatar-5.png" alt="avatar 5"></a>
-                    <h2 class="profile-name">Visitante 4</h2>
-                </div>
-            </li>
-        </ul>
-
-        <span data-uia="profile-button">
-            <a aria-label="Gerenciar perfis" href="#" class="profile-button">Gerenciar perfis</a>
-        </span>
-    </main>
-
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
 </body>
 </html>
