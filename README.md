@@ -17,6 +17,8 @@
 O Dramaflix foi criado no desafio do bootcamp da Digital Innovation One, onde a proposta era recriar a interface da Netflix dando uma nova roupagem ao site.
 O Dramaflix foca nas séries de TV asiáticas. 
 
+- Você pode ver o projeto completo aqui: https://saracavalcante.github.io/dramaflix/
+
 ## :camera_flash: ScreenShots
 <img alt="FlexTourism" title="#FlexTourism" src="./img/screenshot-1.png" />
 <img alt="FlexTourism" title="#FlexTourism" src="./img/screenshot-2.png" />
