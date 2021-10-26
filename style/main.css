@@ -1,0 +1,257 @@
+:root {
+    --c-vampire-black: #080409;
+    --c-electric-pink: #FE287E;
+    --c-philippine-silver: #B3B3B3;
+    --c-white: #ffffff;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--c-vampire-black);
+    color: var(--c-white);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header {
+    align-items: center;
+    background: linear-gradient(rgba(8, 4, 9, 0.69) 0%,
+    rgba(8, 4, 9, 0) 100%);
+    display: flex;
+    padding: 1.5em 3.125em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header img {
+    margin-right: 2em;
+    width: 150px;
+}
+
+.menu {
+    display: flex;   
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 2em;
+    
+}
+
+.menu a {
+    color: var(--c-white);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--c-philippine-silver);
+}
+
+.noti {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: end;
+    width: 100%;
+}
+
+.search__box {
+    align-items: center;
+    display: flex;
+    margin-right: 1em;
+}
+
+.noti .fa-search {
+    padding-right: .5em;
+    transition: .2s;
+}
+
+.search__txt {
+    border: none;
+    background: none;
+    color: var(--c-white);
+    outline: none;
+    transition: .4s;
+    width: 0;
+}
+
+.search__box:hover > .search__txt {
+    width: 200px;
+    padding: .7em;
+}
+
+.search__box:hover {
+    border: 1px solid var(--c-philippine-silver);
+}
+
+/* Hero */
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgb(0, 0, 0,0.50)100%), url("../img/capa-vincenzo.jpg");;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#hero::after {
+    background: linear-gradient(180deg, rgba(8, 4, 9, 0) 0%,
+    #080409 100%); 
+    content: '';
+    display: block;
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: calc(700px - 350px);
+    width: 100%;
+    z-index: 2;
+}
+
+.hero__infos {
+    margin-top: 10em;
+    padding: 0 3.125em;
+    position: relative;
+    z-index: 3;
+}
+
+.main__movie {
+    margin-bottom: 4em;
+}
+
+.main__movie--logo {
+    margin-bottom: 2em;
+    width: 500px;
+}
+
+
+.main__movie--desc {
+    font-size: 1.25rem;
+    max-width: 650px;
+    max-width: 650px;
+    width: 90%;
+}
+
+.main__buttons {
+    margin-top: 2.5em;
+}
+
+.main__buttons .fas {
+    font-size: 1.2rem;
+    margin-right: .5em;
+}
+
+.main__btn {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.123rem;
+    letter-spacing: 2px;
+    padding: .8em 2em;
+    transition: .5s ease all;
+}
+
+.btn__watch {
+    margin-right: .5em;
+}
+
+.btn__watch:hover {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.btn__info {
+    background: rgba(109, 109, 110, 0.7);
+    color: var(--c-white);
+}
+
+.btn__info:hover {
+    background: rgba(109, 109, 110, 0.5);
+}
+
+.box-movie {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* Carousel */
+.carousel {
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+
+.main__carousel {
+    margin-bottom: 3em;
+}
+
+.main__carousel--info {
+    align-items: center;
+    display: flex;
+    margin-bottom: .5em;
+    padding-left: 3em;
+    position: relative;
+    z-index: 3;
+}
+
+.main__carousel--title {
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+.owl-carousel img {
+    border-radius: 5px;
+}
+
+.owl-dots {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header img {
+        margin-right: 0;
+    }
+
+    .menu li {
+        margin-left: 0;
+        margin-right: 2em;
+    }
+
+    .menu li:last-child {
+        margin-right: 0;
+    }
+
+    .noti {
+        display: none;
+    }
+
+    .main__movie--logo {
+        margin-bottom: 2em;
+        max-width: 500px;
+        width: 90%;
+    }
+
+    .btn__watch {
+        margin-bottom: 1.5em;
+    }
+}
